@@ -1,11 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Form</title>
 </head>
+
 <body>
-    
+    <form action="results.html" method="GET">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Username" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="johnDoe@gmail.com" required>
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" min="1" max="100" required>
+        </div>
+        <div>
+            <label for="date">Date of birth</label>
+            <input id="date" type="date" min="1990-01-01" required>
+        </div>
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input id="male" name="gender" type="radio" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input id="female" name="gender" type="radio" value="female">
+            </div>
+        </div>
+        <div>
+            Favourite Food
+            <div>
+                <label for="banana">Banana</label>
+                <input id="banana" name="banana" type="checkbox">
+            </div>
+            <div>
+                <label for="apple">Apple</label>
+                <input id="apple" name="apple" type="checkbox">
+            </div>
+        </div>
+        <div>
+            <label for="eyeColor">Eye color</label>
+            <select name="eyeColor" id="eyeColor">
+                <option> </option>
+                <option value="Brown">Brown</option>
+                <option value="Black">Black</option>
+                <option label="Blue" value="Blue"></option>
+            </select>
+        </div>
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio"></textarea>
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input id="file" type="file" name="file">
+        </div>
+        <div>
+            <label for="phone">Phone</label>
+            <input name="phone" type="tel" id="phone" placeholder="(123)-456-7890">
+        </div>
+        <div>
+            <label for="url">URL</label>
+            <input name="url" type="url" id="url">
+        </div>
+        <div>
+            <label for="color">Color</label>
+            <input name="color" type="color" id="color">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
 </body>
+
 </html>
